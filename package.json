@@ -3,13 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "prettier": {
+    "printWidth": 85
+  },
   "scripts": {
     "dev": "vite",
+    "convert": "sharp.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1"
@@ -26,7 +34,10 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "sharp": "^0.33.5",
     "tailwindcss": "^3.4.10",
+    "tailwindcss-animated": "^1.1.2",
     "vite": "^5.4.1"
   }
 }
