@@ -1,4 +1,5 @@
 import Link from "./options/Link";
+import programer from "@/assets/converted/programer-2.webp";
 import { useState } from "react";
 import { ReactTyped } from "react-typed";
 
@@ -11,13 +12,13 @@ function Hero() {
 
   return (
     <>
-      <section className="w-11/12 mx-auto max-w-[1600px] relative h-full overflow-hidden">
+      <section className="w-11/12 mx-auto max-w-[1600px] relative h-full overflow-hidden max-h-[1000px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full  gap-0 sm:gap-12  md:gap-12 lg:gap-4 md:place-content-center">
-          <section className="flex flex-col gap-8 justify-end md:justify-center relative z-[5]">
-            <h1 className="text-[2.15rem] sm:text-[2.45rem] md:text-[2.5rem] lg:text-6xl font-black text-center lg:text-left animate-fade-down">
+          <section className="flex flex-col gap-8 justify-end md:justify-center relative z-[5] lg:px-4">
+            <h1 className="text-[2.15rem] sm:text-[2.45rem] md:text-[2.5rem] lg:text-6xl font-bold text-center lg:text-left animate-fade-down">
               &lt; I'm{" "}
               <ReactTyped
-                className="text-[#302977]"
+                className="text-[#282542] font-black"
                 strings={["Sebastian", "Developer", "Creative", "Designer"]}
                 typeSpeed={100}
                 backSpeed={80}
@@ -39,9 +40,9 @@ function Hero() {
           </section>
           <section className="flex items-center justify-center h-full">
             <img
-              src="hero.svg"
+              src={programer}
               alt=""
-              className={`select-none w-full max-w-[320px] md:max-w-[350px] lg:max-w-[500px] drop-shadow-light-gray ${load ? "animate-subirBajar" : `animate-fade-down `}`}
+              className={`select-none w-full max-w-[300px] md:max-w-[350px] lg:max-w-[500px] drop-shadow-light-gray ${load ? "animate-subirBajar" : `animate-fade-down `}`}
             />
           </section>
         </div>

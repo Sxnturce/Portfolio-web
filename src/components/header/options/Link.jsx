@@ -7,7 +7,7 @@ function Link({ type, msg }) {
     <>
       <a
         href="#"
-        className="p-2 px-3 bg-gray-900 text-white font-medium rounded text-[1rem]  lg:text-lg cursor-pointer transition-all ease-in-out animate-fade-down hover:ring-2 ring-2 hover:ring-sky-500"
+        className="p-2 px-3 bg-gray-900 text-white font-medium rounded text-[1rem]  lg:text-lg cursor-pointer transition-all ease-in-out  hover:ring-2 ring-2 hover:animate-jump"
       >
         {msg}
         <FontAwesomeIcon icon={type ? faDownload : faGithub} className="ml-2" />

@@ -35,7 +35,7 @@ export default {
             transform: "translateY(0)",
           },
           "50%": {
-            transform: "translateY(-25px)",
+            transform: "translateY(-12px)",
           },
           "100%": {
             transform: "translateY(0)",

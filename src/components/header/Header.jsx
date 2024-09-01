@@ -41,10 +41,10 @@ function Header() {
                 <li>Proyects</li>
               </a>
               <a href="#">
-                <li>Blogs</li>
+                <li>Skills</li>
               </a>
               <a href="#">
-                <li>Skills</li>
+                <li>Blog</li>
               </a>
             </ul>
             <div className="lg:flex hidden flex-grow basis-0 justify-end gap-5 items-center">

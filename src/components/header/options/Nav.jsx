@@ -17,7 +17,7 @@ function Nav({ active }) {
   return (
     <>
       <aside
-        className={`fixed z-10 inset-0 bg-white px-10 ${!active ? "translate-x-full" : "translate-x-0"} transition-all duration-300 ease-in-out`}
+        className={`fixed lg:hidden z-10 inset-0 bg-white px-10 ${!active ? "translate-x-full" : "translate-x-0"} transition-all duration-300 ease-in-out`}
       >
         <div className="flex flex-col gap-6 h-full">
           <ul className="flex flex-col justify-center items-start gap-8 [&>a]:text-gray-600 hover:[&>a]:text-black [&>a]:text-lg hover:[&>a] h-full ">
@@ -36,10 +36,10 @@ function Nav({ active }) {
               <li>Proyects</li>
             </a>
             <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
-              <li>Blogs</li>
+              <li>Skills</li>
             </a>
             <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
-              <li>Skills</li>
+              <li>Blogs</li>
             </a>
             <div className="w-full relative z-10 ">
               <p
