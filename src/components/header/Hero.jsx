@@ -1,10 +1,51 @@
+import Link from "./options/Link";
+import { useState } from "react";
+import { ReactTyped } from "react-typed";
+
 function Hero() {
+  const [load, setLoad] = useState(false);
+
+  setTimeout(() => {
+    setLoad(true);
+  }, 1000);
+
   return (
     <>
-      <section className=" bg-gray-100 w-full relative top-[80px]">
-        <div className="bg-red-600 ">
-          <p className="text-black">Hola</p>
+      <section className="w-11/12 mx-auto max-w-[1600px] relative h-full overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-20 md:gap-4 place-content-center">
+          <section className="flex flex-col gap-8 justify-center relative z-[5]">
+            <h1 className=" text-4xl md:text-6xl font-black text-center lg:text-left animate-fade-down">
+              &lt; I'm{" "}
+              <ReactTyped
+                className="text-[#302977]"
+                strings={["Sebastian", "Developer", "Creative", "Designer"]}
+                typeSpeed={100}
+                backSpeed={80}
+                cursorChar=""
+                loop
+              />{" "}
+              /&gt;
+            </h1>
+
+            <p className="text-[0.95rem] md:text-lg md:text-left text-center animate-fade-right">
+              A Software Engineering student from Peru, training to become a
+              full-stack developer. Passionate about creating and designing scalable,
+              reusable code to address business and personal challenges.
+            </p>
+            <div className="flex gap-8 justify-center lg:justify-normal">
+              <Link type={true} msg={"Download CV"} />
+              <Link msg={"Github"} />
+            </div>
+          </section>
+          <section className="flex items-center justify-center">
+            <img
+              src="hero.svg"
+              alt=""
+              className={`select-none w-full max-w-[300px] md:max-w-[400px] lg:max-w-[500px] drop-shadow-light-gray ${load ? "animate-subirBajar" : `animate-fade-down `}`}
+            />
+          </section>
         </div>
+        <div className=" w-[200px] h-[200px] lg:w-[600px] lg:h-[450px] left-10 bottom-[200px] rounded-full absolute bg-[#44a4fd33] blur-2xl opacity-30 animate-pulse"></div>
       </section>
     </>
   );

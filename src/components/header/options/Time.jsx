@@ -8,7 +8,7 @@ function Time({ time, event }) {
         <FontAwesomeIcon
           icon={time ? faMoon : faSun}
           onClick={event}
-          className={`cursor-pointer text-[1.75rem] ${time ? "text-black" : "text-yellow-400"} `}
+          className={`cursor-pointer text-[1.75rem] ${time ? "text-gray-700" : "text-yellow-300"} `}
         />
       </div>
     </>

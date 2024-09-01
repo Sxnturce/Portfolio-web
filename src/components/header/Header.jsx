@@ -19,7 +19,7 @@ function Header() {
   }
   return (
     <>
-      <header className="w-full h-screen">
+      <header className="w-full h-dvh">
         <nav className=" fixed w-full top-0 bg-white p-4 z-30">
           <div className="w-11/12 max-w-[1400px] mx-auto flex justify-between items-center">
             <a
@@ -36,15 +36,15 @@ function Header() {
                 className="w-full max-w-10"
               />
             </a>
-            <ul className="lg:flex items-center hidden gap-8 [&>a]:text-gray-600 hover:[&>a]:text-black [&>a]:text-lg hover:[&>a]">
+            <ul className="lg:flex items-center hidden gap-8 [&>a]:text-gray-400 hover:[&>a]:text-black [&>a]:text-lg hover:[&>a] ">
               <a href="#">
-                <li>About</li>
-              </a>
-              <a href="#">
-                <li>Blogs</li>
+                <li>Experience</li>
               </a>
               <a href="#">
                 <li>Proyects</li>
+              </a>
+              <a href="#">
+                <li>Blogs</li>
               </a>
               <a href="#">
                 <li>Skills</li>

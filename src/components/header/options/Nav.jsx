@@ -30,13 +30,13 @@ function Nav({ active }) {
               <hr className="bg-black h-1 w-full" />
             </div>
             <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
-              <li>About</li>
-            </a>
-            <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
-              <li>Blogs</li>
+              <li>Experience</li>
             </a>
             <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
               <li>Proyects</li>
+            </a>
+            <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
+              <li>Blogs</li>
             </a>
             <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
               <li>Skills</li>

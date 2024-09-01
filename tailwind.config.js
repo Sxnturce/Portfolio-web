@@ -30,10 +30,26 @@ export default {
             top: '0em',
           },
         },
+        subirBajar: {
+          "0%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-25px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         bn13bouncy: 'bn13bouncy 5s infinite linear',
+        subirBajar: "subirBajar 3s ease-in-out infinite"
       },
+      dropShadow: {
+        'light-gray': '0 4px 8px rgba(0, 0, 0, 0.3)',
+        'dark-gray': '0 4px 6px rgba(0, 0, 0, 0.5)',
+      }
     },
   },
   plugins: [
