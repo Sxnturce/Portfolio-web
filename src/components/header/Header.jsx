@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoNav from "@/assets/converted/logoNav.webp";
 import Hero from "./Hero";
 import Time from "./options/Time";
 import Country from "./options/Country";
@@ -30,11 +31,7 @@ function Header() {
                 High
                 <span className="text-black font-bold">Skill</span>
               </p>
-              <img
-                src="/src/assets/converted/logoNav.webp"
-                alt="logo-img"
-                className="w-full max-w-10"
-              />
+              <img src={logoNav} alt="logo-img" className="w-full max-w-10" />
             </a>
             <ul className="lg:flex items-center hidden gap-8 [&>a]:text-gray-400 hover:[&>a]:text-black [&>a]:text-lg hover:[&>a] ">
               <a href="#">

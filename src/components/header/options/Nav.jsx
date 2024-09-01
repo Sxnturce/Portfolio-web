@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "./Button";
+import statua from "@/assets/converted/statua.webp";
 import Time from "./Time";
 import Country from "./Country";
 
@@ -63,7 +63,7 @@ function Nav({ active }) {
             </div>
           </ul>
           <img
-            src="/src/assets/img/statua.png"
+            src={statua}
             className="absolute opacity-20 -bottom-3 -right-[4.5rem] transition-all ease-in-out duration-300 hover:scale-110 hover:-rotate-12 "
             alt=""
           />
