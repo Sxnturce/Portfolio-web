@@ -6,10 +6,10 @@ function layoutHome() {
   return (
     <>
       <Header />
-      {/*       <main>
+      <main>
         <Outlet />
       </main>
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
