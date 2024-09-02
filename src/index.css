@@ -81,3 +81,13 @@ html {
     }
   }
 }
+
+.img-proyect {
+  mask-image: radial-gradient(
+    circle,
+    transparent,
+    black 10%,
+    black 70%,
+    transparent
+  );
+}

@@ -32,7 +32,7 @@ function Nav({ active }) {
             <a href="#experience" className={`${active ? "animate-fade-left" : ""}`}>
               <li>Experience</li>
             </a>
-            <a href="#" className={`${active ? "animate-fade-left" : ""}`}>
+            <a href="#proyects" className={`${active ? "animate-fade-left" : ""}`}>
               <li>Proyects</li>
             </a>
             <a href="#skills" className={`${active ? "animate-fade-left" : ""}`}>

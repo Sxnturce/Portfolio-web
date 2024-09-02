@@ -55,6 +55,9 @@ export default {
       dropShadow: {
         'light-gray': '0 4px 8px rgba(0, 0, 0, 0.3)',
         'dark-gray': '0 4px 6px rgba(0, 0, 0, 0.5)',
+      },
+      screens: {
+        "2md": "920px"
       }
     },
   },

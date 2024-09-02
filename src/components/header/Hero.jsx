@@ -34,8 +34,12 @@ function Hero() {
               reusable code to address business and personal challenges.
             </p>
             <div className="flex gap-8 justify-center lg:justify-normal">
-              <Link type={true} msg={"Download CV"} />
-              <Link msg={"Github"} />
+              <Link type="download" msg={"Download CV"} />
+              <Link
+                type="github"
+                msg={"Github"}
+                url={"https://github.com/Sxnturce"}
+              />
             </div>
           </section>
           <section className="flex items-center justify-center h-full">

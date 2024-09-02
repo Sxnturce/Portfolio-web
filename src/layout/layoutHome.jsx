@@ -6,7 +6,7 @@ function layoutHome() {
   return (
     <>
       <Header />
-      <main className="w-11/12 mx-auto max-w-[1400px]">
+      <main className="w-11/12 mx-auto max-w-[1400px] flex flex-col gap-16 lg:max-w-[1200px]">
         <Outlet />
       </main>
       <Footer />
