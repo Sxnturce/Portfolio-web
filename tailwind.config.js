@@ -41,10 +41,16 @@ export default {
             transform: "translateY(0)",
           },
         },
+        shake: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '25%': { transform: 'scale(1.02)' },
+          '75%': { transform: 'scale(0.95)' },
+        },
       },
       animation: {
         bn13bouncy: 'bn13bouncy 5s infinite linear',
-        subirBajar: "subirBajar 3s ease-in-out infinite"
+        subirBajar: "subirBajar 3s ease-in-out infinite",
+        shakeCustom: 'shake 3s ease-in-out  infinite',
       },
       dropShadow: {
         'light-gray': '0 4px 8px rgba(0, 0, 0, 0.3)',

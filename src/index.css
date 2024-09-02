@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  scroll-behavior: smooth;
-  scroll-padding-top: 1.25rem;
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 6rem !important;
 }
 
 .burger {
@@ -66,4 +66,18 @@ body {
   transform: rotate(-45deg);
   top: 21px;
   left: 2px;
+}
+
+.card-skill {
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  &:hover {
+    p {
+      color: rgb(32, 32, 32);
+      font-weight: bold;
+    }
+    & > div {
+      background: #202020;
+    }
+  }
 }

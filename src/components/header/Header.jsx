@@ -34,13 +34,13 @@ function Header() {
               <img src={logoNav} alt="logo-img" className="w-full max-w-10" />
             </a>
             <ul className="lg:flex items-center hidden gap-8 [&>a]:text-gray-400 hover:[&>a]:text-black [&>a]:text-lg hover:[&>a] ">
-              <a href="#">
+              <a href="#experience">
                 <li>Experience</li>
               </a>
               <a href="#">
                 <li>Proyects</li>
               </a>
-              <a href="#">
+              <a href="#skills">
                 <li>Skills</li>
               </a>
               <a href="#">
