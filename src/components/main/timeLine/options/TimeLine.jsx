@@ -4,10 +4,10 @@ function TimeLine({ title, place, charge, date }) {
   return (
     <>
       <div className="w-full observed animate-duration-[1.5s]">
-        <h2 className="text-[#282542] text-[1.3rem] sm:text-[1.4rem] font-extrabold">
+        <h2 className="dark:text-color-hero text-dark-color-hero text-[1.3rem] sm:text-[1.4rem] font-extrabold">
           {title}
         </h2>
-        <h3 className="flex items-center text-md text-gray-500  mt-1 mb-4">
+        <h3 className="flex items-center text-md text-gray-500 dark:text-color-smoke-high mt-1 mb-4">
           <svg
             className="size-4 ml-1 mr-2"
             xmlns="http://www.w3.org/2000/svg"

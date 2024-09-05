@@ -2,17 +2,21 @@ function Items({ charge, date }) {
   return (
     <>
       <li className="list-none">
-        <div className="relative mx-12 pb-8 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 before:content-[''] md:grid-cols-1 md:gap-2">
+        <div className="relative mx-12 pb-8 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 before:content-[''] md:grid-cols-1 md:gap-2 dark:before:border-color-line">
           <div className="relative pb-2">
             <div>
-              <span className="text-gray-800 -left-[42px] absolute rounded-full text-5xl">
+              <span className="text-gray-800 -left-[42px] absolute rounded-full text-5xl dark:text-color-sphere">
                 •
               </span>
-              <h3 className="text-xl font-bold text-neutral-700">{charge}</h3>
-              <time className="block mt-1 text-sm text-gray-500 ">{date}</time>
+              <h3 className="text-xl font-bold text-neutral-700 dark:text-color-office">
+                {charge}
+              </h3>
+              <time className="block mt-1 text-sm text-gray-500 dark:text-color-date">
+                {date}
+              </time>
             </div>
           </div>
-          <div className="relative flex flex-col gap-2 pb-2 text-gray-700  text-pretty">
+          <div className="relative flex flex-col gap-2 pb-2 text-gray-700 dark:text-text-smoke text-pretty">
             <ul className="list-disc pl-0 sm:pl-5 marker:text-gray-900 flex flex-col gap-2">
               <li className="pl-1">
                 Actively contributing to multiple open-source projects, including the

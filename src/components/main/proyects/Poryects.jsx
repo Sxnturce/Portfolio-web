@@ -16,10 +16,10 @@ function Proyects() {
   return (
     <>
       <section className="flex flex-col gap-6" id="proyects">
-        <h2 className="text-center lg:text-left text-[2.7rem] font-bold ">
-          Proyects
+        <h2 className="text-center lg:text-left text-[2.3rem] font-bold dark:text-color-smoke flex sm:justify-normal justify-center items-center gap-3">
+          <span>🔩</span> Proyects
         </h2>
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-14">
           <Card
             img={footlux}
             title={"Footlux"}

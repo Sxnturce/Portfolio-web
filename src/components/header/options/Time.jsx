@@ -1,7 +1,16 @@
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 function Time({ time, event }) {
+  useEffect(() => {
+    if (!time) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [time]);
+
   return (
     <>
       <div className={`w-8 flex items-center justify-center`}>
