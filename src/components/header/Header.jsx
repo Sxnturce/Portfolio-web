@@ -34,8 +34,8 @@ function Header() {
   return (
     <>
       <header className="w-full h-dvh">
-        <nav className=" fixed w-full top-0 bg-bg-white dark:bg-bg-nav p-4 z-30 transition-colors duration-200   dark:border-b dark:border-b-border-smoke">
-          <div className="w-11/12 max-w-[1400px mx-auto flex justify-between items-center">
+        <nav className=" fixed w-full top-0 bg-bg-white dark:bg-bg-nav p-4 z-30 transition-colors duration-200 dark:border-b dark:border-b-border-smoke">
+          <div className="w-11/12 max-w-[1400px] mx-auto flex justify-between items-center">
             <a
               href="#"
               className="flex items-center gap-4 flex-grow basis-0 relative z-50"
