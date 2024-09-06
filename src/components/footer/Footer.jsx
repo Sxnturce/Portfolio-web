@@ -18,7 +18,7 @@ function Footer() {
         className="w-full bg-bg-nav mt-[8rem] border border-transparent dark:border-t dark:border-t-[#292929]"
         id="contact"
       >
-        <section className="py-16 px-4 sm:px-8 grid grid-cols-1 lg:grid-cols-[2fr,1.5fr] gap-16 lg:gap-6">
+        <section className="py-16 px-6 sm:px-8 grid grid-cols-1 lg:grid-cols-[2fr,1.5fr] gap-16 lg:gap-6">
           <div className="sm:w-11/12 w-[96%] mx-auto max-w-[1400px]">
             <div className="flex flex-col gap-12 lg:gap-8 items-center justify-center h-full">
               <div className="text-color-smoke-high flex flex-col justify-center items-center">

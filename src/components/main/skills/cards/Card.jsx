@@ -5,14 +5,14 @@ function Card({ title, src, astro, react }) {
   return (
     <>
       <Atropos
-        className="my-atropos"
+        className="my-atropos -z-[1] sm:z-0"
         activeOffset={80}
         shadow={false}
         rotateXMax={30}
         rotateYMax={30}
       >
         <div
-          className={`flex skill-card flex-col gap-2 items-center justify-center cursor-pointer p-3 bg-gray-200 dark:bg-color-skill dark:text-white rounded-md`}
+          className={`flex skill-card flex-col gap-2 items-center select-auto sm:select-none  justify-center cursor-pointer p-3 bg-gray-200 dark:bg-color-skill dark:text-white rounded-md`}
         >
           <img
             src={src}

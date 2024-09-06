@@ -12,9 +12,7 @@ function Link({ type, msg, url, small }) {
       >
         {msg}
         <FontAwesomeIcon
-          icon={
-            type === "download" ? faDownload : type === "github" ? faGithub : faLink
-          }
+          icon={type === "download" ? faDownload : type === "github" ? faGithub : faLink}
           className="ml-2"
         />
       </a>
