@@ -48,7 +48,7 @@ function Form() {
     <section>
       <form
         method="POST"
-        className="max-w-none md:max-w-[450px] mx-auto flex flex-col gap-5"
+        className="max-w-none md:max-w-[450px] mx-auto flex flex-col gap-5 form"
         onSubmit={handleSubmit}
       >
         <h2 className="text-center text-[#ebebeb] font-bold text-4xl">Contáctame</h2>

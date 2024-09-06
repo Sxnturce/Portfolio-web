@@ -20,7 +20,7 @@ function Footer() {
       >
         <section className="py-16 px-6 sm:px-8 grid grid-cols-1 lg:grid-cols-[2fr,1.5fr] gap-16 lg:gap-6">
           <div className="sm:w-11/12 w-[96%] mx-auto max-w-[1400px]">
-            <div className="flex flex-col gap-12 lg:gap-8 items-center justify-center h-full">
+            <div className="flex flex-col gap-12 lg:gap-8 items-center justify-center h-full container-icons">
               <div className="text-color-smoke-high flex flex-col justify-center items-center">
                 <a
                   href="#"
@@ -60,7 +60,7 @@ function Footer() {
           <Form />
         </section>
         <section className="border-t border-t-[#3f3f3f] py-4">
-          <h2 className="text-white text-center text-xl">
+          <h2 className="text-white text-center text-xl footer-text">
             High<span className="font-extrabold">Skill</span> &copy;{date}{" "}
             <span className="text-lg text-gray-400">version 1.0</span>
           </h2>
