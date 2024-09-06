@@ -2,7 +2,7 @@ function Items({ charge, date }) {
   return (
     <>
       <li className="list-none">
-        <div className="relative mx-12 pb-8 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 before:content-[''] md:grid-cols-1 md:gap-2 dark:before:border-color-line">
+        <div className="relative ml-10 mr-0 sm:mx-12  pb-8 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 before:content-[''] md:grid-cols-1 md:gap-2 dark:before:border-color-line">
           <div className="relative pb-2">
             <div>
               <span className="text-gray-800 -left-[42px] absolute rounded-full text-5xl dark:text-color-sphere">

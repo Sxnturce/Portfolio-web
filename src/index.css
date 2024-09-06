@@ -92,13 +92,7 @@ html {
 }
 
 .img-proyect {
-  mask-image: radial-gradient(
-    circle,
-    transparent,
-    black 10%,
-    black 70%,
-    transparent
-  );
+  mask-image: radial-gradient(circle, transparent, black 10%, black 70%, transparent);
 }
 
 .skill-card.time-1 {
@@ -148,4 +142,45 @@ html {
 }
 .skill-card.time-16 {
   animation-delay: 0.85s;
+}
+
+.icons:hover {
+  background-color: #dddddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.icons:nth-of-type(1) {
+  &:hover {
+    color: #0e3e97;
+  }
+}
+
+.icons:nth-of-type(2) {
+  &:hover {
+    color: black;
+  }
+}
+
+.icons:nth-of-type(3) {
+  &:hover {
+    color: #1592c4;
+  }
+}
+
+.icons:nth-of-type(4) {
+  &:hover {
+    color: #541368;
+  }
+}
+
+.icons:nth-of-type(5) {
+  &:hover {
+    color: #309730;
+  }
+}
+
+.icons:nth-of-type(6) {
+  &:hover {
+    color: black;
+  }
 }

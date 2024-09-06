@@ -12,7 +12,7 @@ function Card({ title, src, astro, react }) {
         rotateYMax={30}
       >
         <div
-          className={`flex skill-card flex-col gap-2 items-center justify-center cursor-pointer select-none p-3 bg-gray-200 dark:bg-color-skill dark:text-white rounded-md`}
+          className={`flex skill-card flex-col gap-2 items-center justify-center cursor-pointer p-3 bg-gray-200 dark:bg-color-skill dark:text-white rounded-md`}
         >
           <img
             src={src}

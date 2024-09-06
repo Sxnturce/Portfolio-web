@@ -9,6 +9,7 @@ function Home() {
     const imgs = document.querySelectorAll(".img-animate");
     const texts = document.querySelectorAll(".text-animate");
     const skills = document.querySelectorAll(".skill-card");
+    const icons = document.querySelectorAll(".icons");
 
     skills.forEach((skill, index) => {
       skill.classList.add(`time-${index}`);
