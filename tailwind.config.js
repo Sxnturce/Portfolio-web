@@ -61,6 +61,7 @@ export default {
       },
       screens: {
         "2md": "920px",
+        "ms": "480px",
         "xs": "360px"
       },
       colors: {

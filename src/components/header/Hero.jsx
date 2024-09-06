@@ -14,7 +14,7 @@ function Hero() {
     <>
       <section className="w-11/12 mx-auto max-w-[1600px] relative h-full overflow-hidden max-h-[1000px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 h-full  gap-0 sm:gap-12  md:gap-12 lg:gap-4 md:place-content-center">
-          <section className="flex flex-col gap-5 xs:gap-8 justify-end md:justify-center relative z-[5] lg:px-4">
+          <section className="flex flex-col gap-5 ms:gap-8 justify-end md:justify-center relative z-[5] lg:px-4">
             <h1 className="text-[2.15rem] sm:text-[2.45rem] md:text-[2.5rem] lg:text-6xl font-bold text-center lg:text-left animate-fade-down dark:text-color-smoke">
               &lt; I'm{" "}
               <ReactTyped
@@ -42,7 +42,7 @@ function Hero() {
             <img
               src={programer}
               alt=""
-              className={`select-none w-full max-w-[250px] xs:max-w-[300px] md:max-w-[350px] lg:max-w-[500px] drop-shadow-light-gray ${load ? "animate-subirBajar" : `animate-fade-down `} dark:drop-shadow drop-shadow-light-gray`}
+              className={`select-none w-full max-w-[250px] ms:max-w-[300px] md:max-w-[350px] lg:max-w-[500px] drop-shadow-light-gray ${load ? "animate-subirBajar" : `animate-fade-down `} dark:drop-shadow drop-shadow-light-gray`}
             />
           </section>
         </div>
