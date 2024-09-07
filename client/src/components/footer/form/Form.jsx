@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
+import clientAxios from "../../../config/axios";
 import Input from "../inputs/Input";
+import alerta from "../../alerts/Alerta.js";
 
 function Form() {
   const [name, setName] = useState("");
@@ -15,7 +17,8 @@ function Form() {
     setErrMsg("");
   }, [name, email, msg]);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
+    const target = e.target;
     e.preventDefault();
 
     if (!name.trim()) {
@@ -42,7 +45,26 @@ function Form() {
       setErrMsg("Su mensaje debe tener al menos 15 carácteres");
       return;
     }
-    console.log("Todo bien");
+    try {
+      const client = await clientAxios.post("/portfolio", {
+        name,
+        email,
+        msg,
+      });
+      const mensage = client.data.msg;
+      alerta("success", mensage, name);
+      target.reset();
+      clearInputs();
+    } catch (e) {
+      const msgErr = e.response.data.err;
+      alerta("error", msgErr, name, true);
+    }
+  }
+
+  function clearInputs() {
+    setName("");
+    setEmail("");
+    setMsg("");
   }
   return (
     <section>
@@ -53,7 +75,7 @@ function Form() {
       >
         <h2 className="text-center text-[#ebebeb] font-bold text-4xl">Contáctame</h2>
         <Input
-          name={"Nombre"}
+          name={"Name"}
           err={errName}
           event={({ target: { value } }) => {
             setName(value);

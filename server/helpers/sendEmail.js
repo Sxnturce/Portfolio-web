@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 async function sendMessage(client) {
-  const { nombre: name, email, msg } = client;
+  const { name, email, msg } = client;
   const info = await transporter.sendMail({
     from: `"${name} 💻✅" ${process.env.MAILER_EMAIL}`,
     to: process.env.MAILER_TO,

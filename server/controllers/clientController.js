@@ -2,8 +2,7 @@ import sendEmail from "../helpers/sendEmail.js"
 
 const clientController = async (req, res) => {
   const client = req.body
-  const { nombre: name, email, msg } = client
-
+  const { name, email, msg } = client
   if (!name.trim()) {
     res.status(400).json({ msg: "Inserte un nombre valido" })
     return
@@ -28,7 +27,7 @@ const clientController = async (req, res) => {
     await sendEmail(client)
     res.json({ msg: "Mensaje enviado correctamente" })
   } catch (e) {
-    res.status(400).json({ err: e.message })
+    res.status(400).json({ err: "Error al enviar el mensaje" })
   }
 }
 

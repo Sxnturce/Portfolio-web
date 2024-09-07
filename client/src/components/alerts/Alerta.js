@@ -1,0 +1,14 @@
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+function alerta(icon, msg, name, err) {
+  const MySwal = withReactContent(Swal);
+  MySwal.fire({
+    icon,
+    title: msg,
+    text: !err ? `${name} les responderemos los mas pronto posible 🙌` : "Por favor intente otra vez 😔",
+    showConfirmButton: true,
+  });
+}
+
+export default alerta
