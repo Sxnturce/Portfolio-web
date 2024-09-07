@@ -5,7 +5,7 @@ function alerta(icon, msg, name, err) {
   const MySwal = withReactContent(Swal);
   MySwal.fire({
     icon,
-    title: msg,
+    title: msg || "Ocurrio un error",
     text: !err ? `${name} les responderemos los mas pronto posible 🙌` : "Por favor intente otra vez 😔",
     showConfirmButton: true,
   });

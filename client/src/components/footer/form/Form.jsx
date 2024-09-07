@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import clientAxios from "../../../config/axios";
+import generateToken from "../../../helpers/Token.js";
 import Input from "../inputs/Input";
 import alerta from "../../alerts/Alerta.js";
 
@@ -12,39 +13,52 @@ function Form() {
   const [errMsg, setErrMsg] = useState("");
 
   useEffect(() => {
+    sessionStorage.removeItem("session");
+  }, []);
+
+  useEffect(() => {
     setErrName("");
     setErrEmail("");
     setErrMsg("");
   }, [name, email, msg]);
 
   async function handleSubmit(e) {
-    const target = e.target;
     e.preventDefault();
+    const target = e.target;
+    const token = sessionStorage.getItem("session") || generateToken();
 
     if (!name.trim()) {
-      setErrName("El nombre es obligatorio");
+      setErrName("El nombre es obligatorio.");
       return;
     }
 
     if (name.trim().length <= 3) {
-      setErrName("El nombre es demasiado corto");
+      setErrName("El nombre es demasiado corto.");
       return;
     }
 
     if (!email.trim()) {
-      setErrEmail("El email es obligatorio");
+      setErrEmail("El email es obligatorio.");
       return;
     }
 
     if (!msg.trim()) {
-      setErrMsg("El mensaje es obligatorio");
+      setErrMsg("El mensaje es obligatorio.");
       return;
     }
 
     if (msg.trim().length <= 15) {
-      setErrMsg("Su mensaje debe tener al menos 15 carácteres");
+      setErrMsg("Su mensaje debe tener al menos 15 carácteres.");
       return;
     }
+
+    if (!sessionStorage.getItem("session")) {
+      sessionStorage.setItem("session", token);
+    } else {
+      setErrName("Solo puedes enviar un mensaje, por favor recarga la pagina.");
+      return;
+    }
+
     try {
       const client = await clientAxios.post("/portfolio", {
         name,
@@ -56,7 +70,7 @@ function Form() {
       target.reset();
       clearInputs();
     } catch (e) {
-      const msgErr = e.response.data.err;
+      const msgErr = e.response?.data?.err;
       alerta("error", msgErr, name, true);
     }
   }

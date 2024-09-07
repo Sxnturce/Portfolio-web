@@ -3,6 +3,7 @@ import sendEmail from "../helpers/sendEmail.js"
 const clientController = async (req, res) => {
   const client = req.body
   const { name, email, msg } = client
+
   if (!name.trim()) {
     res.status(400).json({ msg: "Inserte un nombre valido" })
     return
