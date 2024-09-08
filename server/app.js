@@ -7,7 +7,7 @@ server.use(express.json());
 
 const port = process.env.PORT || 4000
 
-const whiteList = [process.env.URL_FRONTEND]
+const whiteList = [process.env.URL_FRONTEND, process.env.URL_SECOND_FRONT]
 const corsOptions = {
   origin: function (origin, cb) {
     if (whiteList.indexOf(origin) !== -1 || !origin) {
