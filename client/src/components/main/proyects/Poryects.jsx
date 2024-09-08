@@ -40,7 +40,7 @@ function Proyects() {
             gh={"https://github.com/Sxnturce/RickyMorty"}
             url={"https://ricky-morty-gamma.vercel.app/"}
             description={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum porro sint, ut, reprehenderit exercitationem commodi voluptatum, fugit voluptates a perferendis sapiente perspiciatis tempore quis magnam pariatur. Laudantium, quas dolore. "
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum porro sint, ut, reprehenderit exercitationem commodi voluptatum, fugit voluptates a perferendis sapiente perspiciatis tempore quis magnam pariatur. Laudantium, quas dolore."
             }
           >
             <Hard img={astro} msg={"Astro"} astro={true} />
