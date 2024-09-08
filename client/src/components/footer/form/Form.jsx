@@ -72,6 +72,7 @@ function Form() {
     } catch (e) {
       const msgErr = e.response?.data?.err;
       alerta("error", msgErr, name, true);
+      sessionStorage.removeItem("session");
     }
   }
 
