@@ -190,3 +190,11 @@ html {
     color: black;
   }
 }
+
+.swal2-confirm {
+  background: #333232;
+}
+
+.swal2-title {
+  font-weight: bold;
+}

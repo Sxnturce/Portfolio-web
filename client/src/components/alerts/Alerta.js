@@ -1,4 +1,5 @@
 import Swal from "sweetalert2";
+import "@sweetalert2/theme-bulma"
 import withReactContent from "sweetalert2-react-content";
 
 function alerta(icon, msg, name, err) {
