@@ -26,7 +26,7 @@ const clientController = async (req, res) => {
 
   try {
     await sendEmail(client)
-    res.json({ msg: "Mensaje enviado correctamente" })
+    res.json({ msg: "Mensaje enviado" })
   } catch (e) {
     res.status(400).json({ err: "Error al enviar el mensaje" })
   }
