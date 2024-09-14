@@ -3,6 +3,7 @@ import clientAxios from "../../../config/axios";
 import generateToken from "../../../helpers/Token.js";
 import Input from "../inputs/Input";
 import alerta from "../../alerts/Alerta.js";
+import Loader from "../../alerts/loaders/Loader";
 
 function Form() {
   const [name, setName] = useState("");
@@ -11,6 +12,7 @@ function Form() {
   const [errName, setErrName] = useState("");
   const [errEmail, setErrEmail] = useState("");
   const [errMsg, setErrMsg] = useState("");
+  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
     sessionStorage.removeItem("session");
@@ -59,17 +61,20 @@ function Form() {
       return;
     }
 
+    setLoader(true);
     try {
       const client = await clientAxios.post("/portfolio", {
         name,
         email,
         msg,
       });
+      setLoader(false);
       const mensage = client.data.msg;
       alerta("success", mensage, name);
       target.reset();
       clearInputs();
     } catch (e) {
+      setLoader(false);
       const msgErr = e.response?.data?.err;
       alerta("error", msgErr, name, true);
       sessionStorage.removeItem("session");
@@ -118,6 +123,7 @@ function Form() {
           />
           {errMsg && <p className="text-red-400 text-sm">{errMsg}</p>}
         </div>
+        <Loader visible={loader} />
         <input
           type="submit"
           value="Enviar"
