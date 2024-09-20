@@ -21,7 +21,7 @@ async function sendMessage(client) {
   const formattedTime = now.toLocaleTimeString();
   try {
     const info = await transporter.sendMail({
-      from: `"${name} 💻✅" <${process.env.MAILER_EMAIL}>`,
+      from: `"${name} 💻✅" ${process.env.MAILER_EMAIL}`,
       to: process.env.MAILER_TO,
       replyTo: process.env.MAILER_EMAIL,
       subject: "Mensaje de posible cliente para realizar un proyecto 🔥",
