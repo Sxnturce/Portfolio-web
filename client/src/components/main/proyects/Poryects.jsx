@@ -1,15 +1,20 @@
 import Card from "./card/Card";
 import Hard from "./card/Hard";
 import rickyMorty from "@/assets/converted/proyect-1.webp";
-import Matress from "@/assets/converted/proyect-2.webp";
-import viamper from "@/assets/converted/viamper.webp";
 import footlux from "@/assets/converted/proyect-4.webp";
 import html from "@/assets/converted/html-logo.webp";
 import css from "@/assets/converted/css-logo.webp";
 import js from "@/assets/converted/javascript-logo.webp";
 import sass from "@/assets/converted/sass-logo.webp";
 import astro from "@/assets/converted/astro.webp";
+import typescript from "@/assets/converted/typescript-logo.webp";
+import express from "@/assets/converted/express-logo.webp";
+import mongo from "@/assets/converted/MongoDB.svg";
+import mysql from "@/assets/converted/MySQL.svg";
+import nodejs from "@/assets/converted/nodejs.svg";
 import react from "@/assets/converted/react-logo.webp";
+import shopNest from "@/assets/converted/ShopNest.webp";
+import InvenTrack from "@/assets/converted/InvenTrack.webp";
 import tailwind from "/iconos/tailwind.svg";
 
 function Proyects() {
@@ -48,30 +53,34 @@ function Proyects() {
             <Hard img={css} msg={"CSS"} />
           </Card>
           <Card
-            img={Matress}
-            title={"Colchones Romantic"}
-            gh={"https://github.com/Sxnturce/Colchones-romantic"}
-            url={"https://colchones-romantic.vercel.app/"}
+            img={InvenTrack}
+            title={"InvenTrack"}
+            gh={"https://github.com/Sxnturce/InvenTrack"}
+            url={"https://inven-track-tau.vercel.app/"}
             description={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum porro sint, ut, reprehenderit exercitationem commodi voluptatum, fugit voluptates a perferendis sapiente perspiciatis tempore quis magnam pariatur. Laudantium, quas dolore. "
             }
           >
-            <Hard img={astro} msg={"Astro"} astro={true} />
             <Hard img={react} msg={"React"} react={true} />
             <Hard img={tailwind} msg={"Tailwind"} />
+            <Hard img={nodejs} msg={"NodeJS"} />
+            <Hard img={express} msg={"express"} />
+            <Hard img={mysql} msg={"Mysql"} />
           </Card>
           <Card
-            img={viamper}
-            title={"Viamper Corporation"}
-            gh={"https://github.com/Sxnturce/viamper-corporation"}
-            url={"https://sxnturce.github.io/viamper-corporation/"}
+            img={shopNest}
+            title={"ShopNest"}
+            gh={"https://github.com/Sxnturce/ShopNest"}
+            url={"https://shop-nest-two.vercel.app/"}
             description={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum porro sint, ut, reprehenderit exercitationem commodi voluptatum, fugit voluptates a perferendis sapiente perspiciatis tempore quis magnam pariatur. Laudantium, quas dolore. "
             }
           >
-            <Hard img={html} msg={"HTML"} />
-            <Hard img={css} msg={"CSS"} />
-            <Hard img={js} msg={"JavaScript"} />
+            <Hard img={react} msg={"React"} react={true} />
+            <Hard img={tailwind} msg={"Tailwind"} />
+            <Hard img={typescript} msg={"TypeScript"} />
+            <Hard img={nodejs} msg={"NodeJS"} />
+            <Hard img={express} msg={"express"} />
           </Card>
         </div>
       </section>

@@ -20,11 +20,11 @@ function Card({ img, title, description, children, url, gh }) {
             </div>
           </div>
         </div>
-        <div className="overflow-hidden w-full flex justify-center items-center p-2 img-animate animate-duration-[1.5s]">
+        <div className="overflow-hidden w-full flex justify-center items-center p-[0.45rem] img-animate animate-duration-[1.5s]">
           <img
             src={img}
             alt="img-proyect"
-            className={`hover:scale-125 transition-all scale-105 ease-in-out duration-500 hover:-rotate-6 object-cover rounded-xl`}
+            className={`hover:scale-125 block transition-all scale-105 ease-in-out duration-500 hover:-rotate-6 object-cover rounded-xl`}
           />
         </div>
       </section>
